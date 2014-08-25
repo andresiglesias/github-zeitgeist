@@ -55,5 +55,5 @@ Be sure to execute 'rake db:seed' or 'rake db:setup' after you modify the file.
 
 ## License & Credits
 
-The Open Source Report Card was created by [Andrés Iglesias](http://github.com/andresiglesias) and it is
+Github Zeitgeist was created by [Andrés Iglesias](http://github.com/andresiglesias) and it is
 made available under the [MIT License](https://github.com/dfm/osrc/blob/master/LICENSE).
