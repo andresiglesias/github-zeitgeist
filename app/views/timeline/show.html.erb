@@ -1,0 +1,27 @@
+<div class="push-left"><a href="/"><img src="assets/Octocat.jpg" height="82" width="100" alt="Octocat"></a></div>
+<div class="push-left title">
+<div class="title-1">Github Zeitgeist</div>
+<div class="title-2">The year in code</div>
+</div>
+<div style="clear: both;"></div>
+<div>
+	<% timeline = Timeline.all %>
+	<div class="push-left timeline">Timeline</div>
+	<div class="generate button"><a href="#" onclick="generateStatistics(); return false;" type="button"><button>Generate statistics</button></a></div>
+	<div class="generate loading" id="loading-statistics"></div>
+	<% if timeline.first != nil %>
+	<div class="generate loading">Last updated: <%= timeline.first.last_updated == nil ? 'Statistics not yet generated' : timeline.first.last_updated.strftime("%m/%e/%Y") %> </div><% end %>
+</div>
+<%= @prueba %>
+<div id="timeline-embed" ></div>
+<script>
+$(document).ready(function() {
+    createStoryJS({
+      type: 'timeline',
+      width: '100%',
+      height: '580',
+      source: '/sample', //get the events.json format from https://github.com/VeriteCo/TimelineJS#file-formats
+      embed_id: 'timeline-embed'
+    });
+  });
+</script>
