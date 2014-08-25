@@ -56,4 +56,4 @@ Be sure to execute 'rake db:seed' or 'rake db:setup' after you modify the file.
 ## License & Credits
 
 Github Zeitgeist was created by [Andrés Iglesias](http://github.com/andresiglesias) and it is
-made available under the [MIT License](https://github.com/dfm/osrc/blob/master/LICENSE).
+made available under the [MIT License](https://github.com/andresiglesias/github-zeitgeist/blob/master/LICENCE).
