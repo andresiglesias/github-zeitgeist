@@ -13,14 +13,14 @@ It uses Github Archive (http://www.githubarchive.org/) and Google BigQuery (http
 2. If you don't already have one, sign up for a Google account: https://accounts.google.com/SignUp
 3. Create a BigQuery enabled project via the Google Developers Console: https://console.developers.google.com/project
 4. Generate a new OAuth Client Id of type "Service account"
-5. Generate new P12 key, download it and place it in the following folder of the forked project 'config/keys/'.
+5. Generate a new P12 key, download it and place it in the following folder of the forked project 'config/keys/'.
 6. Edit "bigquery.rb" in 'config/initializers' with the Service Account information just generated. Change the key_file, client_id and email.
 7. Change your project number in the 'calculate' method in 'app/models/event.rb':
 @project = XXXXX
-You can get your project number in the overiew of your project in Google Developers Console.
+You can get your project number in the overiew of your project in the Google Developers Console.
 8. Run 'rake db:setup'
-9. Start the rails application
-10. Press 'Generate statistics' in the index
+9. Start the rails application: 'rails s'
+10. Press 'Generate statistics' in the index page
 11. Enjoy :)
 
 ## Add your own events
@@ -31,7 +31,7 @@ Go to 'db/seeds.rb'.
 
 You have an example already there. 
 
-An event have the following form: 
+An event have the following structure: 
 
 ```ruby
 event = Event.new
@@ -54,5 +54,5 @@ Be sure to execute 'rake db:seed' or 'rake db:setup' after you modify the file.
 
 ## License & Credits
 
-Github Zeitgeist was created by [Andrés Iglesias](http://github.com/andresiglesias) and it is
+Github Zeitgeist was created by [Andrés Iglesias](http://andresiglesias.net) and it is
 made available under the [MIT License](https://github.com/andresiglesias/github-zeitgeist/blob/master/LICENCE).
