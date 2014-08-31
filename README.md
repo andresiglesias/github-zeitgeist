@@ -6,6 +6,7 @@
 Github Zeitgeist is a Rails Web Application to show how different events changed what people code in a certain period of time.
 It uses Github Archive (http://www.githubarchive.org/) and Google BigQuery (https://developers.google.com/bigquery/) to get the statistics.
 
+Find a working example at: http://github-zeitgeist.andresiglesias.net/
 
 ## Install
 
